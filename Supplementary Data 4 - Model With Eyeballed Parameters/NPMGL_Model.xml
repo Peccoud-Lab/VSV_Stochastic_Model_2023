@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model substanceUnits="item" timeUnits="second" extentUnits="item">
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_second">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="c1" spatialDimensions="3" size="1" units="litre" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="nsg" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="N" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nsg_NPL" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nsg_NP" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nsg_N" compartment="c1" initialAmount="1" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="psg" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="psg_N" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="L" compartment="c1" initialAmount="1" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P" compartment="c1" initialAmount="1" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G" compartment="c1" initialAmount="1" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mL" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mM" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mP" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mG" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mN" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nsg_NPLM" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nsg_NPLMG" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="V" compartment="c1" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="k0" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k1" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k2" value="0.015618206" units="per_second" constant="true"/>
+      <parameter id="k3" value="0.015618206" units="per_second" constant="true"/>
+      <parameter id="k4" value="0.00031236412" units="per_second" constant="true"/>
+      <parameter id="k5" value="0.00031236412" units="per_second" constant="true"/>
+      <parameter id="k6" value="0.00031236412" units="per_second" constant="true"/>
+      <parameter id="k7" value="0.00031236412" units="per_second" constant="true"/>
+      <parameter id="k8" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k9" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k10" value="0.00160781533" units="per_second" constant="true"/>
+      <parameter id="k11" value="0.00160781533" units="per_second" constant="true"/>
+      <parameter id="k12" value="0.00160781533" units="per_second" constant="true"/>
+      <parameter id="k13" value="0.00160781533" units="per_second" constant="true"/>
+      <parameter id="k14" value="6.00158982511924e-05" units="per_second" constant="true"/>
+      <parameter id="k15" value="2.21159777424483e-11" units="per_second" constant="true"/>
+      <parameter id="k16" value="0.001125470731" units="per_second" constant="true"/>
+      <parameter id="k17" value="0.001125470731" units="per_second" constant="true"/>
+      <parameter id="k18" value="0.001125470731" units="per_second" constant="true"/>
+      <parameter id="k19" value="0.001125470731" units="per_second" constant="true"/>
+      <parameter id="k20" value="0.000162017167381974" units="per_second" constant="true"/>
+      <parameter id="k21" value="6.44697424892704e-12" units="per_second" constant="true"/>
+      <parameter id="k22" value="0.0007878297" units="per_second" constant="true"/>
+      <parameter id="k23" value="0.0007878297" units="per_second" constant="true"/>
+      <parameter id="k24" value="0.0007878297" units="per_second" constant="true"/>
+      <parameter id="k25" value="0.0007878297" units="per_second" constant="true"/>
+      <parameter id="k26" value="4.13472070098576e-05" units="per_second" constant="true"/>
+      <parameter id="k27" value="4.49872946330778e-11" units="per_second" constant="true"/>
+      <parameter id="k28" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k29" value="0.000551481" units="per_second" constant="true"/>
+      <parameter id="k30" value="0.000551481" units="per_second" constant="true"/>
+      <parameter id="k31" value="0.000551481" units="per_second" constant="true"/>
+      <parameter id="k32" value="0.000551481" units="per_second" constant="true"/>
+      <parameter id="k33" value="6.2655601659751e-05" units="per_second" constant="true"/>
+      <parameter id="k34" value="3.92555186721992e-11" units="per_second" constant="true"/>
+      <parameter id="k35" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k36" value="5.51481e-05" units="per_second" constant="true"/>
+      <parameter id="k37" value="5.51481e-05" units="per_second" constant="true"/>
+      <parameter id="k38" value="5.51481e-05" units="per_second" constant="true"/>
+      <parameter id="k39" value="5.51481e-05" units="per_second" constant="true"/>
+      <parameter id="k40" value="0.00151" units="per_second" constant="true"/>
+      <parameter id="k41" value="1.1e-08" units="per_second" constant="true"/>
+      <parameter id="k42" value="0.00019" units="per_second" constant="true"/>
+      <parameter id="k43" value="0.00019" units="per_second" constant="true"/>
+      <parameter id="k44" value="0.00019" units="per_second" constant="true"/>
+      <parameter id="k45" value="0.00019" units="per_second" constant="true"/>
+      <parameter id="k46" value="0.00019" units="per_second" constant="true"/>
+      <parameter id="k47" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k48" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k49" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k50" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k51" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k52" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k53" value="0.0461" units="per_second" constant="true"/>
+      <parameter id="k54" value="1.9e-05" units="per_second" constant="true"/>
+      <parameter id="k55" value="1.9e-05" units="per_second" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="negative_strand_encapsidation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k0 </ci>
+              <ci> nsg </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="positive_strand_encapsidation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="psg_N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> psg </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="negative_strand_synthesis" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <ci> psg </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="negative_strand_synthesis_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="psg_N" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="psg_N" constant="false"/>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <ci> psg_N </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="positive_strand_synthesis_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k4 </ci>
+              <ci> nsg </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="positive_strand_synthesis_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k5 </ci>
+              <ci> nsg_N </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="positive_strand_synthesis_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k6 </ci>
+              <ci> nsg_NP </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="positive_strand_synthesis_4" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="psg" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k7 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="negative_strand_p_binding" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="P" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k8 </ci>
+              <ci> nsg_N </ci>
+              <ci> P </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="negative_strand_l_binding" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="L" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k9 </ci>
+              <ci> nsg_NP </ci>
+              <ci> L </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_N_0" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="mN" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k10 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_N_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="mN" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k11 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_N_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="mN" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k12 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_N_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="mN" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="translation_N" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mN" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mN" constant="false"/>
+          <speciesReference species="N" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14 </ci>
+              <ci> mN </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="N_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="N" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k15 </ci>
+              <ci> N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_P_0" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="mP" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k16 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_P_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="mP" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k17 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_P_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="mP" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k18 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_P_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="mP" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k19 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="translation_P" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mP" constant="false"/>
+          <speciesReference species="P" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k20 </ci>
+              <ci> mP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="P_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="P" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k21 </ci>
+              <ci> P </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_M_0" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="mM" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k22 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_M_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="mM" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k23 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_M_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="mM" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k24 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_M_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="mM" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k25 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="translation_M" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mM" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mM" constant="false"/>
+          <speciesReference species="M" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k26 </ci>
+              <ci> mM </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="M_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="M" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k27 </ci>
+              <ci> M </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcriptional_silencing" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="M" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPLM" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k28 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> M </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_G_0" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="mG" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k29 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_G_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="mG" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k30 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_G_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="mG" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_G_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="mG" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k32 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="translation_G" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mG" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mG" constant="false"/>
+          <speciesReference species="G" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k33 </ci>
+              <ci> mG </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="G_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k34 </ci>
+              <ci> G </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Virion_Assembly" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPLM" constant="false"/>
+          <speciesReference species="G" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPLMG" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k35 </ci>
+              <ci> nsg_NPLM </ci>
+              <ci> G </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_L_0" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg" constant="false"/>
+          <speciesReference species="mL" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k36 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_L_1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_N" constant="false"/>
+          <speciesReference species="mL" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k37 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_L_2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NP" constant="false"/>
+          <speciesReference species="mL" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k38 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transcription_L_3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nsg_NPL" constant="false"/>
+          <speciesReference species="mL" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k39 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="translation_L" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mL" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mL" constant="false"/>
+          <speciesReference species="L" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k40 </ci>
+              <ci> mL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="L_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="L" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41 </ci>
+              <ci> L </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="mN_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mN" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k42 </ci>
+              <ci> mN </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="mP_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mP" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43 </ci>
+              <ci> mP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="mM_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mM" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k44 </ci>
+              <ci> mM </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="mG_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mG" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k45 </ci>
+              <ci> mG </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="mL_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="mL" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k46 </ci>
+              <ci> mL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k47 </ci>
+              <ci> nsg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_N1258_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_N" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k48 </ci>
+              <ci> nsg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_N1258_P466_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NP" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k49 </ci>
+              <ci> nsg_NP </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_N1258_P466_L50_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPL" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k50 </ci>
+              <ci> nsg_NPL </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_N1258_P466_L50_M1826_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPLM" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k51 </ci>
+              <ci> nsg_NPLM </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="nsg_N1258_P466_L50_M1826_G1205_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPLMG" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k52 </ci>
+              <ci> nsg_NPLMG </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Virion_Budding" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nsg_NPLMG" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="V" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k53 </ci>
+              <ci> nsg_NPLMG </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="psg_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="psg" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k54 </ci>
+              <ci> psg </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="psg_N_degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="psg_N" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k55 </ci>
+              <ci> psg_N </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

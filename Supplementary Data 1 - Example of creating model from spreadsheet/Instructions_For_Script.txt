@@ -1,0 +1,7 @@
+The Python script excel_to_SBML.py takes two excel spreadsheets and returns a model in xml format. An example of these spreadsheets is provided with initial_quantities.xlsx and Model_Reaction_Input.xlsx. To generate a model run the following code in the shell:
+
+
+$ python3 Model_Reaction_Input.xlsx initial_quantities.xlsx model.xml
+
+This will generate an xml file named model.xml to store the new model. 
+
