@@ -10,7 +10,7 @@ Python Notebook 1 - Python notebook for timing loading and simulation times of t
 
 Folder 3 - contains the model of each Vesicular Stomatitis Virus with eyeballed parameters. These are the models that are the starting point for the Folder 4 python notebooks.
 
-Folder 4 - contains the 3 notebooks used to fit the models. The models in the Folder 4 are necessary to run the Fitting_1_ODE_Model_Fitting.ipynb notebook. This notebook outputs models that are then fed into the Fitting_2_Stoch_Model_1.ipynb python notebook. This then outputs models that are used by the Fitting_3_Stoch_Model_2_and_Data_Generation.ipynb to fit the model and get the final stochastic model used in this paper. These stochastic models are stored in the Folder 5. This also generates and saves the dataset of trajectories. All of the output models from the 3 model fitting notebooks as well as this dataset are required run Python Notebook 2. 
+Folder 4 - contains the 3 notebooks used to fit the models. The models in the Folder 4 are necessary to run the Fitting_1_ODE_Model_Fitting.ipynb notebook. This notebook outputs models that are then fed into the Fitting_2_Stoch_Model_1.ipynb python notebook. This then outputs models that are used by the Fitting_3_Stoch_Model_2_and_Data_Generation.ipynb to fit the model and get the final stochastic model used in this paper. These stochastic models are stored in the Folder 5. This also generates and saves the dataset of trajectories. All of the output models from the 3 model fitting notebooks as well as this dataset are required to run Python Notebook 2. 
 
 Folder 5 - Contains the final stochastic models that were fit using the notebooks in supplementary data 5.
 
