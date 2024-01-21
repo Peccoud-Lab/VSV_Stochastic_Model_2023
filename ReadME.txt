@@ -1,5 +1,3 @@
-Supplementary Data Contents
-
 All models are stored in .xml format because the models are coded in sbml which is based on .xml.
 
 All python notebooks can be accessed and run using Jupiter Notebook. It may also be possible to use google collab to run the code, but the code was originally implemented and run using Jupiter Notebook.
